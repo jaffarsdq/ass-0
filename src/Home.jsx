@@ -1,7 +1,14 @@
+import {  useNavigate } from "react-router-dom"
 
 const Home = () => {
+    const navigate = useNavigate();
+
+    function handleClick() {
+        navigate('/profile')
+    }
+
   return (
-    <div>home</div>
+    <button onClick={handleClick}>home</button>
   )
 }
 
